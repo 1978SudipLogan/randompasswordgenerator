@@ -68,9 +68,10 @@ function Password() {
         {/* Dark Mode Icon */}
         <div
           style={{
-            position: "absolute",
-            top: "16px",
-            right: "16px",
+            // position: "absolute",
+            // top: "16px",
+            // right: "16px",
+            textAlign: "center",
             cursor: "pointer",
           }}
           onClick={toggleTheme}
@@ -140,8 +141,12 @@ function Password() {
               transition: "background-color 0.3s ease",
             }}
             onClick={createPassword}
-            onMouseOver={(e) => (e.target.style.backgroundColor = themeStyles.buttonHover)}
-            onMouseOut={(e) => (e.target.style.backgroundColor = themeStyles.buttonBackground)}
+            onMouseOver={(e) =>
+              (e.target.style.backgroundColor = themeStyles.buttonHover)
+            }
+            onMouseOut={(e) =>
+              (e.target.style.backgroundColor = themeStyles.buttonBackground)
+            }
           >
             Generate Password
           </button>
@@ -158,8 +163,12 @@ function Password() {
               transition: "background-color 0.3s ease",
             }}
             onClick={clearPassword}
-            onMouseOver={(e) => (e.target.style.backgroundColor = themeStyles.buttonHover)}
-            onMouseOut={(e) => (e.target.style.backgroundColor = themeStyles.buttonBackground)}
+            onMouseOver={(e) =>
+              (e.target.style.backgroundColor = themeStyles.buttonHover)
+            }
+            onMouseOut={(e) =>
+              (e.target.style.backgroundColor = themeStyles.buttonBackground)
+            }
           >
             Clear
           </button>
